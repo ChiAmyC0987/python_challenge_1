@@ -31,7 +31,6 @@ with open(file_name, newline='') as csv_file:
         Value = Profit_Loss[j]
         Value2 = Profit_Loss[j-1]
         Sum_Profit = int(Value) + int(Value2)
-        print(Sum_Profit)
         j += 1
 
     i = 2  # Calculate change in Profit
@@ -39,7 +38,6 @@ with open(file_name, newline='') as csv_file:
         Profit_Loss_Now = Profit_Loss[i]
         Profit_Loss_Past = Profit_Loss[(i - 1)]
         Diff = int(Profit_Loss_Now) - int(Profit_Loss_Past)
-        print(Profit_Loss_Now, Profit_Loss_Past, Diff)
         Delta_Profit.append(Diff)
         i += 1
 
